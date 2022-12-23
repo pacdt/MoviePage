@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    overflow: hidden;
+}
+body {   
+    /* background: linear-gradient(360deg, rgba(23, 26, 28, 1), rgba(40, 44, 46, .3)), url('./img/fundo.jpg'); */
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100vh;
+    /* padding-top: 300px; */
+}
+#v-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: green; */
+    width: 60%;
+    height: 100vh;
+    margin-top: 250px;
+}
+#poster{
+    width: 250px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+#content{
+    /* background-color: red; */
+    width: 100%;
+    height: 100vh;
+    margin-top: 300px;
+    padding: 0 15px;
+}
+#content h1{
+    font-size: 32px;
+}
+#content h3{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+#content span{
+    font-size: 16px;
+    font-weight: 700;
+}
+#content button{
+    width: 150px;
+    height: 45px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    background-color: crimson;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+#content div p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+#actors{
+    /* background-color: blue; */
+    width: 60%;
+    height: 100vh;
+    margin-top: 300px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+#actors #elenco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.imgActor{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: black;
+    margin-right: 15px;
+}
+.actorInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.ai{
+    display: flex;
+    flex-direction: column;
+}
