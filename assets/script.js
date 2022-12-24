@@ -76,3 +76,12 @@ function openModal() {
     document.body.style.overflow = 'hidden';
     
 }
+function closeModal() {
+    let modal = document.getElementById('modal');
+
+    if (typeof modal == 'undefined' || modal === null)
+        return;
+
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}

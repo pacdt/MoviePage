@@ -26,7 +26,8 @@
             <h1 id="name">Título do Filme</h1>
             <h3>Título Original: <span id="originalTitle">Titulo Original</span></h3>
             <h3>Data de Lançamento: <span id="release_date">Data</span></h3>
-            <button>Assistir Trailer</button>
+            <a href="https://www.youtube.com/watch?v=HluMG9tJXHM&ab_channel=WarnerBros.PicturesBrasil" target="_blank">
+            <button>Assistir Trailer</button></a>
             <button onclick="openModal()">Assistir Agora</button>
             <div>
                 <p id="resumo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt autem fuga dolor incidunt
@@ -68,12 +69,14 @@
             </div>
             </div>
         </section>
-    </main>
-    <div id="modal">
-        <div id="modal-content">
-            <iframe width="100%" height="100%" src="https://embed.warezcdn.net/filme/tt6443346" frameborder="0"></ifram>
+        <div id="modal">
+            <div id="modal-content">
+                <button id="close" onclick="closeModal()">x</button>
+                <iframe width="100%" height="100%" src="https://embed.warezcdn.net/filme/tt6443346" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
-    </div>
+    </main>
+    
 
     <script src="./assets/script.js"></script>
 </body>
