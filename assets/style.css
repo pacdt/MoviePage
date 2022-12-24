@@ -107,3 +107,26 @@ main{
     display: flex;
     flex-direction: column;
 }
+button{
+    cursor: pointer;
+}
+button:hover{
+    opacity: .9;
+}
+button:active{
+    opacity: .6;
+}
+#modal{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#modal-content{
+    margin: 25px auto;
+    height: 90%;
+    width: 90%;
+}

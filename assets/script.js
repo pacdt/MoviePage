@@ -1,4 +1,4 @@
-let movieID =  348 //436270;
+let movieID =  436270;
 const apiKey = "6d326c6165f963f78b528d76e49f358c";
 const imgURL = "https://image.tmdb.org/t/p/original";
 const lang = 'pt-BR';
@@ -63,3 +63,16 @@ async function cast(){
 
 }
 cast()
+let modal = document.getElementById('modal');
+console.log(modal)
+
+function openModal() {
+    let modal = document.getElementById('modal');
+
+    if (typeof modal == 'undefined' || modal === null)
+        return;
+
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    
+}
