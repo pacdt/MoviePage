@@ -1,4 +1,4 @@
-let movieID = 436270;
+let movieID = 436270//899112;
 const apiKey = "6d326c6165f963f78b528d76e49f358c";
 const imgURL = "https://image.tmdb.org/t/p/original";
 const lang = "pt-BR";
@@ -105,3 +105,11 @@ async function getMovie() {
 		"+trailer";
 }
 getMovie();
+
+/* function carregarPag(){
+    let id = document.getElementById('id').value
+    movieID = id
+    window.location.href = '../index.html'
+    console.log(id)
+}
+*/
