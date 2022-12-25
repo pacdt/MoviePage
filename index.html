@@ -7,18 +7,15 @@
     <link rel="stylesheet" href="./assets/style.css">
     <title id="webTitle">Movie</title>
 </head>
-
-<body id="body" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url('./assets/img/fundo.jpg'); background-position: top center;
+<body id="body" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url('./assets/img/fundo.jpg'); background-position: top center;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;">
     <main>
-        
-
         <section id="v-info">
             <img id="poster" src="./assets/img/poster.jpg" alt="capa">
-            <div style="display: flex;">
-                <p id="rating">X</p><span>/10</span>
+            <div style="display: flex; font-size: 20px;">
+                <p id="rating" >X</p><span>/10</span>
             </div>
         </section>
 
@@ -26,13 +23,14 @@
             <h1 id="name">Título do Filme</h1>
             <h3>Título Original: <span id="originalTitle">Titulo Original</span></h3>
             <h3>Data de Lançamento: <span id="release_date">Data</span></h3>
-            <a href="https://www.youtube.com/watch?v=HluMG9tJXHM&ab_channel=WarnerBros.PicturesBrasil" target="_blank">
+            <a id="trailer" href="https://www.youtube.com/results?search_query=" target="_blank">
             <button>Assistir Trailer</button></a>
             <button onclick="openModal()">Assistir Agora</button>
             <div>
                 <p id="resumo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt autem fuga dolor incidunt
                     mollitia. Iusto vel sint voluptates veniam, architecto dolore quo dolorem, eius adipisci laudantium
-                    qui, numquam consequatur quia.</p>
+                    qui, numquam consequatur quia.
+                </p>
             </div>
         </section>
         <section id="actors">
@@ -71,14 +69,11 @@
         </section>
         <div id="modal">
             <div id="modal-content">
-                <button id="close" onclick="closeModal()">x</button>
-                <iframe width="100%" height="100%" src="https://embed.warezcdn.net/filme/tt6443346" frameborder="0" allowfullscreen></iframe>
+                <button id="close" onclick="closeModal()">Fechar Player</button>
+                <iframe width="100%" height="100%" src="https://embed.warezcdn.net/filme/" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </main>
-    
-
     <script src="./assets/script.js"></script>
 </body>
-
 </html>
